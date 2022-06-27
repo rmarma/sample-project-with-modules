@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MBAND-45251"
-include ':app'
+include(":app")

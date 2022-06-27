@@ -4,7 +4,7 @@ pluginManagement {
         google()
         mavenCentral()
     }
-    includeBuild("gradle/settings")
+    includeBuild("../gradle/settings")
 }
 
 plugins {
@@ -18,7 +18,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "MBAND-45251"
-include(":app")
-includeBuild("includedBuild")
-include(":mylibrary1")
+rootProject.name = "includedBuild"
+include(":plugins")

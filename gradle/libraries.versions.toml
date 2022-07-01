@@ -1,0 +1,17 @@
+[versions]
+android = "7.2.1"
+kotlin = "1.7.0"
+
+
+[libraries]
+androidGradleClasspath = { module = "com.android.tools.build:gradle", version.ref = "android" }
+kotlinGradlePluginClasspath = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinSerializationClasspath = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "android" }
+androidLibrary = { id = "com.android.library", version.ref = "android" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinAndroidExtensions = { id = "org.jetbrains.kotlin.android.extensions", version.ref = "kotlin" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

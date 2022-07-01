@@ -17,6 +17,11 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+    versionCatalogs {
+        create("libraries") {
+            from(files("gradle/libraries.versions.toml"))
+        }
+    }
 }
 rootProject.name = "MBAND-45251"
 include(":app")

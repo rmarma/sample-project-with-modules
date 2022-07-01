@@ -1,5 +1,6 @@
 plugins {
     id("common-library")
+    alias(libraries.plugins.androidLibrary)
 }
 
 dependencies {
